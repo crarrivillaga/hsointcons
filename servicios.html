@@ -1,0 +1,386 @@
+<!DOCTYPE>
+<html>
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"><!--- RESPONSIVE (Viewport para dispositivos moviles) -->
+        <meta name="description" content="Acerca de la empresa/pagina"> <!--Lo que aparece al buscar en google-->
+        <meta name="keywords" contect="palabras clave">
+        
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/servicios.css"> <!--external css-->
+        <link rel="stylesheet" href="css/normalize.css"> 
+        <link rel="stylesheet" href="icons/fonts.css"> <!--iconos-->
+        <link rel="icon" href="images/HSO-triangulo.ico"> <!--favicon-->
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <!-- JQUERY -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="http://code.jquery.com/jquery-latest.js"></script> <!--- jquery -->
+        
+        <script>
+            $(document).ready(function(){
+                $('#sky').click(function(){
+                    $('body, html').animate({
+                        scrollTop: '0px'
+                    }, 300); //300, velocidad en la que sube                    
+                }); 
+                
+                $(window).scroll(function(){
+                    if($(this).scrollTop() > 0){
+                        $('#sky').slideDown(300);
+                    }else{
+                        $('#sky').slideUp(300);
+                    } 
+                });
+            });
+        </script>
+        
+        <title>HSO Integral Consulting C.A.</title>
+	</head>
+	
+	<body>
+        <!--
+        <header id="header2">
+            
+            <div id="logo-name">
+                <img src="images/HSO-nombre1.png">                
+            </div>
+            <nav id="menu2">
+                <ul id="ul2">
+                    <li id="li2"><a href="index.html" style="text-decoration:none;">Inicio</a></li>
+                    <li id="li2"><a href="servicios.html" style="text-decoration:none;" id="imp2">Productos y Servicios</a></li>
+                    <li id="li2a"><a href="clientes.html" style="text-decoration:none;" id="imp1">Clientes y Alianzas</a></li>
+                    <li id="li2"><a href="contacto.html" style="text-decoration:none;">Contacto</a></li>
+                </ul>
+            </nav>
+            <div id="icons">
+                <a href="https://www.facebook.com/hsoconsultingca/?ref=ts&fref=ts"><span class="icon-facebook"></span></a>
+                <a href="https://twitter.com/HSOConsulting"><span class="icon-twitter"></span></a>
+                <a href="https://www.linkedin.com/groups/8349383/profile"><span class="icon-linkedin"></span></a>
+            </div>          
+            
+            
+        </header>
+        -->
+        
+        
+        <header id="header1">
+            <div id="inside1">
+                <div id="logo-name">
+                    <img src="images/HSO-logonuevo.png">
+                </div>
+                <!--
+                <div id="icons">
+                    <a href="https://www.facebook.com/hsoconsultingca/?ref=ts&fref=ts"><span class="icon-facebook"></span></a>
+                    <a href="https://twitter.com/HSOConsulting"><span class="icon-twitter"></span></a>
+                    <a href="https://www.linkedin.com/groups/8349383/profile"><span class="icon-linkedin"></span></a>
+                </div>
+                -->
+                <header id="header2">
+                    <nav>
+                        <ul>
+                            <li id="li2"><a href="index.html" style="text-decoration:none;"><span class="icon-home"></span>Inicio</a></li>
+                            <li id="li2imp"><a href="servicios.html" style="text-decoration:none;" id="imp2"><span class="icon-briefcase"></span>Productos y Servicios
+                                <!--
+                                <ul id="ulsub">
+                                    <a href="articulos.html"><li id="li2sub">Artículos</li></a>
+                                    <a href="leyes.html"><li id="li2sub">Leyes</li></a>
+                                </ul>
+                                -->
+                            </a></li>
+                            <li id="li2a"><a href="articulos.html" style="text-decoration:none;" id="imp1"><span class="icon-books"></span>Información</a></li>
+                            <li id="li2a"><a href="clientes.html" style="text-decoration:none;" id="imp1"><span class="icon-star-full"></span>Clientes y Alianzas</a></li>
+                            <!--<li id="li2"><a href="Tutoriales/tutoriales.html" style="text-decoration:none;"><span class="icon-display"></span>Tutoriales</a></li>--->
+                            <li id="li2"><a href="contacto.html" style="text-decoration:none;"><span class="icon-envelop"></span>Contacto</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+        </header>
+        
+        <div id="movilmenu">
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu">Menú<span class="icon-circle-down"></span></label>
+
+            <nav class="menu">
+                <ul id="ul2">
+                    <li id="li2"><a href="index.html" style="text-decoration:none;"><span class="icon-home"></span>Inicio</a></li>
+                    <li id="li2"><a href="servicios.html" style="text-decoration:none;" id="imp2"><span class="icon-briefcase"></span>Productos y Servicios</a></li>
+                    <li id="li2a"><a href="articulos.html" style="text-decoration:none;" id="imp1"><span class="icon-books"></span>Información</a></li>
+                    <li id="li2a"><a href="clientes.html" style="text-decoration:none;" id="imp1"><span class="icon-star-full"></span>Clientes y Alianzas</a></li>
+                    <!--<li><a href="Tutoriales/tutoriales.html" style="text-decoration:none;"><span class="icon-display"></span>Tutoriales</a></li>-->
+                    <li id="li2"><a href="contacto.html" style="text-decoration:none;"><span class="icon-envelop"></span>Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        
+        <!--
+        <div id="socialbx">
+            <div id="iconsbx">
+                <a href="https://www.facebook.com/hsoconsultingca/?ref=ts&fref=ts" target="_blank"><span class="icon-facebook"></span></a>
+                <a href="https://twitter.com/HSOConsulting" target="_blank"><span class="icon-twitter"></span></a>
+                <a href="https://www.linkedin.com/groups/8349383/profile" target="_blank"><span class="icon-linkedin"></span></a>
+            </div>
+        </div>
+        -->
+        
+        <span class="icon-circle-up" id="sky"></span>
+        <div id="contenido">
+            
+            
+            <!--
+            <div id="serv1">
+                <h2>Gestión de servicios de Seguridad y Salud en el trabajo</h2>
+                <br>
+                <ul>
+                    <li>Evaluación del Sistema de Gestión de Seguridad</li>
+                    <li>Elaboración del Programa de Seguridad y Salud en el Trabajo, adecuado a las necesidades de cada Organización.</li>
+                    <li>Elaboración del Programa de Formación en Materia de Seguridad y Salud en el Trabajo.</li>
+                    <li>Desarrollo de programa de Inspecciones integrales.</li>
+                    <li>Evaluación de los Factores de Riesgo presentes en cada puesto de trabajo.</li>
+                    <li>Análisis Ergonómico de Puestos de Trabajo. Considerando cargos tanto operativos, como administrativos.
+</li>
+                    <li>Evaluación de los Riesgos Psicosociales presentes en el ambiente de trabajo.</li>
+                    <li>Elaboración y adecuación de normas de trabajo seguro para el desarrollo de las actividades diarias.</li>
+                    <li>Desarrollo de Planes de Desalojo, simulación y simulacros (elaboración de mapas de riesgo, mapas de desalojo).</li>
+                    <li>Adecuación de las señalizaciones e instalación de las mismas.</li>
+                    <li>Elección de Delegadas y Delegados de Prevención.</li>
+                    <li>Conformación, Activación y Actualización del Comités de Seguridad y Salud Laboral.</li>
+                    <li>Asesoría Global en Legislación laboral y cumplimiento del Marco Legal vigente.</li>
+                    <li>Elaboración de Propuesta del Programa de Recreación y utilización del tiempo Libre.</li>
+                </ul>
+            </div>
+            
+            
+            
+            <div id="serv2">
+                <h2>Gestión de Talento Humano</h2>
+                <br>
+                <ul>
+                    <li>Análisis y Diseño de Organigramas.</li>
+                    <li>Análisis y Elaboración de Descripciones de Cargos.</li>
+                    <li>Análisis y Evaluación del Clima Laboral y de los niveles de satisfacción del personal.</li>
+                    <li> Evaluación de las Necesidades de Formación específica y grupal.</li>
+                    <li> Diseño del programa de capacitación de acuerdo a necesidades de la empresa y acompañamiento en la ejecución.</li>
+                    <li> Diseño de Sistemas de Retribución y Compensación que permitan la competitividad en el mercado laboral.</li>
+                    <li>Selección de Talento humano de acuerdo a sus competencias personales y profesionales.</li>
+                    <li>Evaluación profesional o de desempeño.</li>
+                    <li>  Mejora de la Gestión de Calidad de Vida de la empresa y su impacto con la comunidad.</li>
+                </ul>
+            </div>
+            
+            
+            
+            <div id="serv3">
+                <h2>Focalización de estrategias y esfuerzos para la Mejora Contínua de Procesos</h2>
+                <br>
+                <ul>
+                    <li>  Definición de indicadores y objetivos de Calidad, Coste, Plazos y Personas.</li>
+                    <li>Desarrollo de Sistemas de Ideas de Mejora Organizacional (Administrativas y Operativas).</li>
+                    <li>Creación de un Sistema Eficiente de Calidad adecuado a las necesidades de cada empresa.</li>
+                    <li> Análisis de Distribuciones de Plantas y Almacenes.</li>
+                    <li>Mejora de métodos calidad.</li>
+                    <li>Aumento de la Capacidad de las máquinas.</li>
+                    <li>Mejora de ciclos de Producción.</li>
+                    <li> Eliminación de Cuellos de Botella.</li>
+                    <li>Estudio de nuevas implantaciones y maquinaria.</li>
+                    <li>Control de Costes en los Proyectos, Productos y Servicios.</li>
+                </ul>
+            </div>
+            -->
+            
+            <div id="servs">
+                <div class="ins">
+                    <div id="serv1">
+                        <h2>Gestión de servicios de Seguridad y Salud en el trabajo</h2>
+                        <br>
+                        <ul>
+                            <li>Evaluación del Sistema de Gestión de Seguridad</li>
+                            <li>Elaboración del Programa de Seguridad y Salud en el Trabajo, adecuado a las necesidades de cada Organización.</li>
+                            <li>Elaboración del Programa de Formación en Materia de Seguridad y Salud en el Trabajo.</li>
+                            <li>Desarrollo de programa de Inspecciones integrales.</li>
+                            <li>Evaluación de los Factores de Riesgo presentes en cada puesto de trabajo.</li>
+                            <li>Análisis Ergonómico de Puestos de Trabajo. Considerando cargos tanto operativos, como administrativos.</li>
+                            <li>Evaluación de los Riesgos Psicosociales presentes en el ambiente de trabajo.</li>
+                            <li>Elaboración y adecuación de normas de trabajo seguro para el desarrollo de las actividades diarias.</li>
+                            <li>Desarrollo de Planes de Desalojo, simulación y simulacros (elaboración de mapas de riesgo, mapas de desalojo).</li>
+                            <li>Adecuación de las señalizaciones e instalación de las mismas.</li>
+                            <li>Elección de Delegadas y Delegados de Prevención.</li>
+                            <li>Conformación, Activación y Actualización del Comités de Seguridad y Salud Laboral.</li>
+                            <li>Asesoría Global en Legislación laboral y cumplimiento del Marco Legal vigente.</li>
+                            <li>Elaboración de Propuesta del Programa de Recreación y utilización del tiempo Libre.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="ins">
+                    <div id="serv2">
+                        <h2>Gestión de Talento Humano</h2>
+                        <br>
+                        <ul>
+                            <li>Análisis y Diseño de Organigramas.</li>
+                            <li>Análisis y Elaboración de Descripciones de Cargos.</li>
+                            <li>Análisis y Evaluación del Clima Laboral y de los niveles de satisfacción del personal.</li>
+                            <li>Evaluación de las Necesidades de Formación específica y grupal.</li>
+                            <li>Diseño del programa de capacitación de acuerdo a necesidades de la empresa y acompañamiento en la ejecución.</li>
+                            <li>Diseño de Sistemas de Retribución y Compensación que permitan la competitividad en el mercado laboral.</li>
+                            <li>Selección de Talento humano de acuerdo a sus competencias personales y profesionales.</li>
+                            <li>Evaluación profesional o de desempeño.</li>
+                            <li>Mejora de la Gestión de Calidad de Vida de la empresa y su impacto con la comunidad.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="ins">
+                    <div id="serv3">
+                        <h2>Desarrollo de Planes de Formación</h2>
+                        <br>
+                        <ul>
+                            <li>Diseño del programa de capacitación de acuerdo a necesidades de la empresa y acompañamiento en la ejecución</li>
+                            <li>Liderazago.</li>
+                            <li>Trabajo en equipo.</li>
+                            <li>Desarrollo de Habilidades Interpersonales.</li>
+                            <li>Desarrollo de Habilidades Comunicacionales.</li>
+                            <li>Manejo de conflictos.</li>
+                            <li>Habilidades de negociación.</li>
+                            <li>Servicio al cliente.</li>
+                            <li>Clima Organizacional.</li>
+                        </ul>
+                        <br>
+                        <p><strong>Y según las necesidades de nuestros clientes nos adaptamos mezclando las distintas especialidades del conocimiento y del saber.</strong></p>
+                    </div>
+                </div>
+                
+                <div class="ins">
+                    <div id="serv4">
+                        <h2>Focalización de estrategias y esfuerzos para la Mejora Contínua de Procesos</h2>
+                        <br>
+                        <ul>
+                            <li>  Definición de indicadores y objetivos de Calidad, Coste, Plazos y Personas.</li>
+                            <li>Desarrollo de Sistemas de Ideas de Mejora Organizacional (Administrativas y Operativas).</li>
+                            <li>Creación de un Sistema Eficiente de Calidad adecuado a las necesidades de cada empresa.</li>
+                            <li> Análisis de Distribuciones de Plantas y Almacenes.</li>
+                            <li>Mejora de métodos calidad.</li>
+                            <li>Aumento de la Capacidad de las máquinas.</li>
+                            <li>Mejora de ciclos de Producción.</li>
+                            <li> Eliminación de Cuellos de Botella.</li>
+                            <li>Estudio de nuevas implantaciones y maquinaria.</li>
+                            <li>Control de Costes en los Proyectos, Productos y Servicios.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <!--<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default" id="defaulpanel">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Gestión de servicios de Seguridad y Salud en el Trabajo<span class="icon-circle-down"></span></a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Evaluación del Sistema de Gestión de Seguridad</li>
+                                <li>Elaboración del Programa de Seguridad y Salud en el Trabajo, adecuado a las necesidades de cada Organización.</li>
+                                <li>Elaboración del Programa de Formación en Materia de Seguridad y Salud en el Trabajo.</li>
+                                <li>Desarrollo de programa de Inspecciones integrales.</li>
+                                <li>Evaluación de los Factores de Riesgo presentes en cada puesto de trabajo.</li>
+                                <li>Análisis Ergonómico de Puestos de Trabajo. Considerando cargos tanto operativos, como administrativos.
+                </li>
+                                <li>Evaluación de los Riesgos Psicosociales presentes en el ambiente de trabajo.</li>
+                                <li>Elaboración y adecuación de normas de trabajo seguro para el desarrollo de las actividades diarias.</li>
+                                <li>Desarrollo de Planes de Desalojo, simulación y simulacros (elaboración de mapas de riesgo, mapas de desalojo).</li>
+                                <li>Adecuación de las señalizaciones e instalación de las mismas.</li>
+                                <li>Elección de Delegadas y Delegados de Prevención.</li>
+                                <li>Conformación, Activación y Actualización del Comités de Seguridad y Salud Laboral.</li>
+                                <li>Asesoría Global en Legislación laboral y cumplimiento del Marco Legal vigente.</li>
+                                <li>Elaboración de Propuesta del Programa de Recreación y utilización del tiempo Libre.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="panel panel-default" id="defaulpanel">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h2 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Gestión de Talento Humano<span class="icon-circle-down"></span></a>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Análisis y Diseño de Organigramas.</li>
+                                <li>Análisis y Elaboración de Descripciones de Cargos.</li>
+                                <li>Análisis y Evaluación del Clima Laboral y de los niveles de satisfacción del personal.</li>
+                                <li>Evaluación de las Necesidades de Formación específica y grupal.</li>
+                                <li>Diseño del programa de capacitación de acuerdo a necesidades de la empresa y acompañamiento en la ejecución.</li>
+                                <li>Diseño de Sistemas de Retribución y Compensación que permitan la competitividad en el mercado laboral.</li>
+                                <li>Selección de Talento humano de acuerdo a sus competencias personales y profesionales.</li>
+                                <li>Evaluación profesional o de desempeño.</li>
+                                <li>Mejora de la Gestión de Calidad de Vida de la empresa y su impacto con la comunidad.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="panel panel-default" id="defaulpanel">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h2 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Focalización de estrategias y esfuerzos para la Mejora Contínua de Procesos<span class="icon-circle-down"></span></a>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Definición de indicadores y objetivos de Calidad, Coste, Plazos y Personas.</li>
+                                <li>Desarrollo de Sistemas de Ideas de Mejora Organizacional (Administrativas y Operativas).</li>
+                                <li>Creación de un Sistema Eficiente de Calidad adecuado a las necesidades de cada empresa.</li>
+                                <li>Análisis de Distribuciones de Plantas y Almacenes.</li>
+                                <li>Mejora de métodos calidad.</li>
+                                <li>Aumento de la Capacidad de las máquinas.</li>
+                                <li>Mejora de ciclos de Producción.</li>
+                                <li>Eliminación de Cuellos de Botella.</li>
+                                <li>Estudio de nuevas implantaciones y maquinaria.</li>
+                                <li>Control de Costes en los Proyectos, Productos y Servicios.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+            </div>-->         
+            
+            
+            
+            
+            <footer>
+                <div id="inside">
+                    
+                    <div id="icons2">                       
+                        <a href="https://www.facebook.com/hsoconsultingca/?ref=ts&fref=ts" target="_blank"><span class="icon-facebook"></span></a>
+                        <a href="https://twitter.com/HSOConsulting" target="_blank"><span class="icon-twitter"></span></a>
+                        <a href="https://www.linkedin.com/groups/8349383/profile" target="_blank"><span class="icon-linkedin"></span></a>
+                        <a href="https://www.youtube.com/channel/UCGq5k1Q_t1UAGigPLeuoGJw" target="_blank"><span class="icon-youtube"></span></a>
+                    </div>
+                    
+                    <div id="infofoot">
+                        <p id="end">Todos los derechos reservados - © 2013 HSO Integral Consulting C.A. - Rif: J-40308913-2. <img src="images/favicon1.png" style="position:relative; width:20px; heigth:20px; opacity:0;"></p>
+                    </div>
+                    
+                </div>
+            </footer>
+            
+            
+            
+        </div>  <!-- contenido -->
+	</body>
+
+</html>

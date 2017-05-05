@@ -1,0 +1,524 @@
+<!DOCTYPE>
+<html>
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"><!--- RESPONSIVE (Viewport para dispositivos moviles) -->
+        <meta name="description" content="Acerca de la empresa/pagina"> <!--Lo que aparece al buscar en google-->
+        <meta name="keywords" contect="palabras clave">
+
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/articulos.css"> <!--external css-->
+        <link rel="stylesheet" href="css/normalize.css"> 
+        <link rel="stylesheet" href="icons/fonts.css"> <!--iconos-->
+        <link rel="icon" href="images/HSO-triangulo.ico"> <!--favicon-->
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <!-- JQUERY -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="http://code.jquery.com/jquery-latest.js"></script> <!--- jquery -->
+        <script src="http://listjs.com/assets/javascripts/list.min.js"></script> <!-- "buscador" -->
+
+        <script>
+            $(document).ready(function(){
+                $('#sky').click(function(){
+                    $('body, html').animate({
+                        scrollTop: '0px'
+                    }, 300); //300, velocidad en la que sube
+                });
+
+                $(window).scroll(function(){
+                    if($(this).scrollTop() > 0){
+                        $('#sky').slideDown(300);
+                    }else{
+                        $('#sky').slideUp(300);
+                    }
+                });
+            });
+        </script>
+
+        <title>HSO Integral Consulting C.A.</title>
+	</head>
+
+
+    <body>
+       <header id="header1">
+            <div id="inside1">
+                <div id="logo-name">
+                    <img src="images/HSO-logonuevo.png">
+                </div>
+                <!--
+                <div id="icons">
+                    <a href="https://www.facebook.com/hsoconsultingca/?ref=ts&fref=ts"><span class="icon-facebook"></span></a>
+                    <a href="https://twitter.com/HSOConsulting"><span class="icon-twitter"></span></a>
+                    <a href="https://www.linkedin.com/groups/8349383/profile"><span class="icon-linkedin"></span></a>
+                </div>
+                -->
+                <header id="header2">
+                    <nav>
+                        <ul>
+                            <li id="li2"><a href="index.html" style="text-decoration:none;"><span class="icon-home"></span>Inicio</a></li>
+                            <li id="li2imp"><a href="servicios.html" style="text-decoration:none;" id="imp2"><span class="icon-briefcase"></span>Productos y Servicios
+                                <!--
+                                <ul id="ulsub">
+                                    <a href="articulos.html"><li id="li2sub">Artículos</li></a>
+                                    <a href="leyes.html"><li id="li2sub">Leyes</li></a>
+                                </ul>
+                                -->
+                            </a></li>
+                            <li id="li2a"><a href="articulos.html" style="text-decoration:none;" id="imp1"><span class="icon-books"></span>Información</a></li>
+                            <li id="li2a"><a href="clientes.html" style="text-decoration:none;" id="imp1"><span class="icon-star-full"></span>Clientes y Alianzas</a></li>
+                            <!--<li id="li2"><a href="Tutoriales/tutoriales.html" style="text-decoration:none;"><span class="icon-display"></span>Tutoriales</a></li>--->
+                            <li id="li2"><a href="contacto.html" style="text-decoration:none;"><span class="icon-envelop"></span>Contacto</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+        </header>
+
+        <div id="movilmenu">
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu">Menú<span class="icon-circle-down"></span></label>
+
+            <nav class="menu">
+                <ul id="ul2">
+                    <li id="li2"><a href="index.html" style="text-decoration:none;"><span class="icon-home"></span>Inicio</a></li>
+                    <li id="li2"><a href="servicios.html" style="text-decoration:none;" id="imp2"><span class="icon-briefcase"></span>Productos y Servicios</a></li>
+                    <li id="li2a"><a href="articulos.html" style="text-decoration:none;" id="imp1"><span class="icon-books"></span>Información</a></li>
+                    <li id="li2a"><a href="clientes.html" style="text-decoration:none;" id="imp1"><span class="icon-star-full"></span>Clientes y Alianzas</a></li>
+                    <!--<li><a href="Tutoriales/tutoriales.html" style="text-decoration:none;"><span class="icon-display"></span>Tutoriales</a></li>-->
+                    <li id="li2"><a href="contacto.html" style="text-decoration:none;"><span class="icon-envelop"></span>Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <span class="icon-circle-up" id="sky"></span>
+        <div id="contenido">
+
+
+            <div id="laws">
+                <h2>Leyes, Normas y Reglamentos</h2>
+                <br>
+                <p id="infl">Le facilitamos la obtención de algúnas leyes, éstas ya estan en formato PDF listas para su descarga. Utiliza el buscador si requieres específicamente de una ley, norma o reglamento. Para verlo, haz click en el nombre del archivo.</p>
+                <br>
+
+                <div id="law-list">
+                    <div id="bus">
+                        <span class="icon-search2"></span><input class="search" type="text"><!--<button>Ordenar por nombre</button>-->
+                    </div>
+                    <br>
+                    <ul class="list">
+                        <li>
+                            <a href="documentacion/Leyes/Aspectos%20a%20Considerar%20en%20una%20Inspeccion%20de%20HSI%202266-88.pdf" target="_blank" style="text-decoration:none;"><p class="name">Aspectos a Considerar en una Inspección de HSI 2266-88.</p></a><span class="icon-circle-right"></span>
+                        </li>
+                        <li>
+                            <a href="documentacion/Leyes/Calzado%20de%20Seguridad%20039-97.pdf" target="_blank" style="text-decoration:none;"><p class="name">Calzado de Seguridad 039-97.</p></a><span class="icon-circle-right"></span>
+                        </li>
+                        <li>
+                            <a href="documentacion/Leyes/Caracteristicas%20de%20las%20Vias%20de%20Escape%200810-%2098.pdf" target="_blank" style="text-decoration:none;"><p class="name">Características de las Vías de Escape 0810- 98.</p></a><span class="icon-circle-right"></span>
+                        </li>
+                        <li>
+                            <a href="documentacion/Leyes/Codigos%20de%20Colores%20Tuberias%200253-99..pdf" target="_blank" style="text-decoration:none;"><p class="name">Codigos de Colores Tuberias 0253-99.</p></a><span class="icon-circle-right"></span>
+                        </li>
+                        <li>
+                            <a href="documentacion/Leyes/Colores%20Senalizacion%20de%20Cilindros%20Gas%201706-1999.pdf" target="_blank" style="text-decoration:none;"><p class="name">Colores Señalización de Cilindros Gas 1706-1999.</p></a><span class="icon-circle-right"></span>
+                        </li>
+                        <li>
+                            <a href="documentacion/Leyes/Colores%20Simbolos%20y%20Dimensiones%20para%20Senales%200187-92.pdf" target="_blank" style="text-decoration:none;"><p class="name">Colores Símbolos y Dimensiones para Señales 0187-92.</p></a><span class="icon-circle-right"></span>
+                        </li>
+                        <li>
+                            <a href="documentacion/Leyes/Concentraciones%20de%20Sustancias%20Quimicas%20en%20Ambientes%20de%20Trabajo%202253-2001.pdf" target="_blank" style="text-decoration:none;"><p class="name">Concentraciones de Sustancias Químicas en Ambientes de Trabajo 2253-2001.</p></a><span class="icon-circle-right"></span>
+                        </li>
+                        <li>
+                            <a href="documentacion/Leyes/Escaleras%20Rampas%20y%20Pasarelas,%20Requisitos%20de%20Seguridad%202245-1990.pdf" target="_blank" style="text-decoration:none;"><p class="name">Escaleras Rampas y Pasarelas, Requisitos de Seguridad 2245-1990.</p></a><span class="icon-circle-right"></span>
+                        </li>
+                        <li>
+                            <a href="documentacion/Leyes/Estadisticas%20de%20Accidentes%20047-97.pdf" target="_blank" style="text-decoration:none;"><p class="name">Estadísticas de Accidentes 047-97.</p></a><span class="icon-circle-right"></span>
+                        </li>
+                        <li>
+                            <a href="documentacion/Leyes/Extintores%20Generalidades%201040-89..pdf" target="_blank" style="text-decoration:none;"><p class="name">Extintores Generalidades 1040-89.</p></a><span class="icon-circle-right"></span>
+                        </li>
+                        <li>
+                            <a href="documentacion/Leyes/Guia%20para%20la%20Elaboracion%20de%20Planes%20para%20el%20Control%20de%20Emergencias%202226-90.pdf" target="_blank" style="text-decoration:none;"><p class="name">Guía para la Elaboración de Planes para el Control de Emergencias 2226-90.</p></a><span class="icon-circle-right"></span>
+                        </li>
+                        <li>
+                            <a href="documentacion/Leyes/Ley%20Organica%20de%20Prevencion,%20Condiciones%20y%20Medio%20Ambiente%20de%20Trabajo%20(LOPCYMAT)..pdf" target="_blank" style="text-decoration:none;"><p class="name">Ley Orgánica de Prevención, Condiciones y Medio Ambiente de Trabajo (LOPCYMAT).</p></a><span class="icon-circle-right"></span>
+                        </li>
+                        <li>
+                            <a href="documentacion/Leyes/Luminancias%20en%20Tareas%20y%20PT%202249-93.pdf" target="_blank" style="text-decoration:none;"><p class="name">Luminancias en Tareas y PT 2249-93.</p></a><span class="icon-circle-right"></span>
+                        </li>
+                        <li>
+                            <a href="documentacion/Leyes/Materiales%20Inflamables%20y%20Combustibles.%20Almacenamiento%20y%20Manejo%202239-2-1985.pdf" target="_blank" style="text-decoration:none;"><p class="name">Materiales Inflamables y Combustibles. Almacenamiento y Manejo 2239-2-1985.</p></a><span class="icon-circle-right"></span>
+                        </li>
+                        <li>
+                            <a href="documentacion/Leyes/Norma%20Calor%20y%20Frio%202254-1995.pdf" target="_blank" style="text-decoration:none;"><p class="name">Norma Calor y Frío 2254-1995.</p></a><span class="icon-circle-right"></span>
+                        </li>
+                        <li>
+                            <a href="documentacion/Leyes/Norma%20Ventilacion%202250-2000.pdf" target="_blank" style="text-decoration:none;"><p class="name">Norma Ventilacion 2250-2000.</p></a><span class="icon-circle-right"></span>
+                        </li>
+                        <li>
+                            <a href="documentacion/Leyes/NT-%2002-2009%20de%20la%20Declaraci%C3%B3n%20de%20Enfermedades%20Ocupacionales..pdf" target="_blank" style="text-decoration:none;"><p class="name">NT-02-2009 de la Declaración de Enfermedades Ocupacionales.</p></a><span class="icon-circle-right"></span>
+                        </li>
+                        <li>
+                            <a href="documentacion/Leyes/NT-01-2008%20del%20Programa%20de%20Seguridad%20y%20Salud%20en%20el%20Trabajo.pdf" target="_blank" style="text-decoration:none;"><p class="name">NT-01-2008 del Programa de Seguridad y Salud en el Trabajo.</p></a><span class="icon-circle-right"></span>
+                        </li>
+                        <li>
+                            <a href="documentacion/Leyes/Principios%20Ergonomicos%20de%20la%20Concepcion%20de%20los%20Sistemas%20de%20Trabajo%202273-1991.pdf" target="_blank" style="text-decoration:none;"><p class="name">Principios Ergonomicos de la Concepción de los Sistemas de Trabajo 2273-1991.</p></a><span class="icon-circle-right"></span>
+                        </li>
+                        <li>
+                            <a href="documentacion/Leyes/Reglamento%20de%20Condiciones%20de%20Higiene%20y%20Seguridad%20en%20el%20Trabajo.pdf" target="_blank" style="text-decoration:none;"><p class="name">Reglamento de Condiciones de Higiene y Seguridad en el Trabajo.</p></a><span class="icon-circle-right"></span>
+                        </li>
+                        <li>
+                            <a href="documentacion/Leyes/Reglamento%20de%20la%20LOPCYMAT.pdf" target="_blank" style="text-decoration:none;"><p class="name">Reglamento de la LOPCYMAT.</p></a><span class="icon-circle-right"></span>
+                        </li>
+                        <li>
+                            <a href="documentacion/Leyes/Ruido%20Ocupacional%201565-1995.pdf" target="_blank" style="text-decoration:none;"><p class="name">Ruido Ocupacional 1565-1995.</p></a><span class="icon-circle-right"></span>
+                        </li>
+                    </ul>
+                    <script>
+                        var options = {
+                            valueNames: ['name','date']
+                        };
+                        var userList = new List ('law-list', options);
+                    </script>
+                </div>
+            </div>
+
+
+
+            <div id="art">
+               
+                <h2>Artículos</h2>
+                <br>
+                <p id="infa">En esta sección podrás ver diversos artículos que se han realizado. Para ver el artículo, haz click en "Ver Artículo".</p>
+                <br>
+                <div id="art-list">
+                  <div id="bus2">
+                      <span class="icon-search2"></span><input class="search" type="text"><!--<button>Ordenar por nombre</button>-->
+                  </div>
+                  <br>
+                  <ul class="list">
+                    <li>
+                      <p class="name2">Aspectos Administrativos y Documentales que debe cumplir la empresa</p><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Ver Artículo</button>
+                      <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title">Aspectos Administrativos y Documentales que debe cumplir la empresa</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p id="titleart">Ante una inspección de INPASEL, ¿Con que aspectos administrativos y documentales debe cumplir la empresa?</p>
+                              <p id="infoart">La seguridad y la salud laboral son fiscalizadas principalmente por funcionarios de INPSASEL en la Diresat correspondiente a la zona donde esté ubicado el Centro de trabajo.</p>
+                              <div id="insimg">
+                                  <img src="images/articulos/INPSASEL.jpg" id="image1">
+                              </div>
+                              <p id="infoart">Es el Instituto Nacional de Seguridad y Salud Laborales, el primer garante del cumplimiento del marco legal en lo que respecta a la garantía de la seguridad, la salud y una vida digna en una empresa, es por ello que al realizar una inspección en un Centro de Trabajo, el funcionario actuante verifica en primer lugar los Deberes Formales que debe cumplir la empresa. <br><br>A continuación una breve lista de chequeo que deben validar las empresas para cumplir con la Ley:</p>
+                              <p id="titleart2">Aspectos Documentales</p>
+                              <p id="infoartnum">1) Contar con una Carpeta Fiscal, es decir que en ella a través de separadores claramente definidos, se visualice la información básica de la empresa como:</p>
+                              <ul id="ulart">
+                                  <li>Registro mercantil (Última actualización).</li>
+                                  <li>N° de RIF.</li>
+                                  <li>N° de NIL.</li>
+                                  <li>Horario de trabajo (OJO este también debe estar publicado en un lugar visible).</li>
+                                  <li>N° de aportante Ince y último trimestre cancelado.</li>
+                                  <li>N° IVSS y último mes cancelado.</li>
+                                  <li>N° de FAOV y último mes cancelado.</li>
+                                  <li>Permisos de Bomberos.</li>
+                                  <li>Última Declaración de ISLR.</li>
+                                  <li>Fotocopia de la primera página del Libro de Actas.</li>
+                                  <li>Fotocopia del N° de Registro de Delegados de Prevención actuales.</li>
+                              </ul>
+                              <div id="insimg">
+                                  <img src="images/articulos/lupa.jpg">
+                              </div>
+                              <p id="infoartnum">2) El expediente de cada trabajadora o trabajador debe contar con información mínima, como por ejemplo:</p>
+                              <ul id="ulart">
+                                  <li>Fotocopia de la CI.</li>
+                                  <li>N° de inscripción ante el IVSS.</li>
+                                  <li>Contrato de Trabajo.</li>
+                                  <li>Análisis de Procesos Peligrosos asociados al cargo a desempeñar.</li>
+                                  <li>Notificación de los Riesgos a los que están sometidos los trabajadores durante el ejercicio de sus funciones.</li>
+                                  <li>Rutagrama actualizado.</li>
+                                  <li>Todos estos documentos deben estar firmados, con fecha de recepción y con impresión dactilar del trabajador o trabajadora.</li>
+                              </ul>
+                              <p id="infoartnum">3) Contar con una carpeta de formación organizada por tipo de curso y en orden alfabético, esta contendrá la siguiente información:</p>
+                              <ul id="ulart">
+                                  <li>Lista de Asistencia al Taller o curso (Esta lista debe contener además el objetivo o contenido programático) y la firma y sello del o los facilitadores. También la fecha y la duración en horas académicas del mismo.</li>
+                                  <li>Registro estadístico trimestral del progreso en formación de 16 horas, tal como lo establece la ley. Esta estadística debe estar organizada por trabajador y por curso.</li>
+                              </ul>
+                              <div id="insimg">
+                                  <img src="images/articulos/carpetas-de-expediente-con-separadores-17613-MLV20142312616_082014-F.jpg" style="position:relative; width:200px; heigth:250px;">
+                              </div>
+                              <p id="infoartnum">4) Cartelera de Seguridad: Esta cartelera debe contar con información relevante en materia de seguridad y salud laboral, como:</p>
+                              <ul id="ulart">
+                                  <li>Información acordada por el CSSL.</li>
+                                  <li>Información de los SSyST.</li>
+                                  <li>Estadísticas de accidentabilidad.</li>
+                                  <li>Morbilidad</li>
+                                  <li>Cualquier otra información pertinente en materia de seguridad y salud.</li>
+                              </ul>
+                              <p id="infoartnum">5) Validación de la Existencia del CSSL: se validará:</p>
+                              <ul id="ulart">
+                                  <li>Fecha de la última actualización del CSSL.</li>
+                                  <li>Vigencia del o los DDP a la fecha.</li>
+                                  <li>Libro de Actas (Última reunión).</li>
+                                  <li>Actas (Última Reunión).</li>
+                                  <li>Anexos 12 Consignados ante el INPSASEL (con firma del instituto).</li>
+                              </ul>
+                              <div id="insimg">
+                                  <img src="images/articulos/comite.jpg">
+                              </div>
+                              <p id="infoartnum">6) Existencia o no de los Servicios de Seguridad y Salud en el Trabajo, propios  mancomunados.</p>
+                              <div id="insimg">
+                                  <img src="images/articulos/SSYST.jpg" id="image5">
+                              </div>
+                              <p id="infoartnum">7) Validación de los Exámenes médicos preventivos:</p>
+                              <ul id="ulart">
+                                  <li>Pre-Ingreso.</li>
+                                  <li>Pre-Vacacional.</li>
+                                  <li>Post-Vacacional.</li>
+                                  <li>Cualquiera pertinente a la naturaleza de los riesgos.</li>
+                                  <li>Pre-Egreso</li>
+                              </ul>
+                              <p id="infoart">La empresa no debe contar con informes médicos sino con constancias de aptitud para el trabajo habitual de parte del Servicio Médico. Esta información puede estar en el expediente del trabajador o en un archivo adicional por parte de los Servicios Médicos.</p>
+                              <p id="infoartnum">8) Existencia y puesta en práctica de un Programa de Seguridad y Salud en el Trabajo, aprobado por el Comité de Seguridad y Salud Laboral.</p>
+                              <div id="insimg">
+                                  <img src="images/articulos/psst.jpg" id="image6">
+                              </div>
+                              <p id="infoartnum">9) Evidencia de Información y Declaración de los Accidentes de Trabajo y Presuntas enfermedades ocupacionales ante el INPSASEL.</p>
+                              <ul id="ulart">
+                                  <li>Registro de la empresa ante el INPSASEL. Nombre de Usuario y Clave.</li>
+                              </ul>
+                              <p id="infoart">En HSO Integral Consulting, C.A. recomendamos que verifiques estos items y los pongas al día en los diferentes Centros de Trabajo. En este sentido ofrecemos las siguientes asesorías:</p>
+                              <ul id="ulart">
+                                  <li>Evaluación de Expedientes laborales y actualización de los mismos.</li>
+                                  <li>Desarrollo y puesta en práctica de una Propuesta de Programa de Seguridad y Salud en el Trabajo.</li>
+                                  <li>Desarrollo y puesta en práctica de un Programa de Formación.</li>
+                                  <li>Elección de Delegadas y Delegados de Prevención.</li>
+                                  <li>Conformación / Actualización del Comité de Seguridad y Salud Laboral.</li>
+                              </ul>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    
+                    <li>
+                      <p class="name2">Dolor y Lesiones en Espalda - ¿Porque?</p><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Ver Artículo</button>
+                      <div class="modal fade" id="myModal2" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title">Dolor y Lesiones en Espalda - ¿Porque?</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p id="titleart">Dolor y Lesiones en Espalda - ¿Porque?</p>
+                              <div id="insimg">
+                                  <img src="images/articulos/Car_040_imp.jpg" id="image6">
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    
+                    <li>
+                      <p class="name2">LOPCYMAT - Recordatorio</p><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">Ver Artículo</button>
+                      <div class="modal fade" id="myModal3" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title">LOPCYMAT</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p id="titleart">LOPCYMAT</p>
+                              <p id="infoart">Recuerda siempre que el objeto de la LOPCYMAT es:</p>
+                              <ul id="ulart">
+                                  <li>Establecer normas y lineamientos de las políticas, que permitan garantizar a los trabajadores, condiciones de seguridad, salud y bienestar en un ambiente de trabajo adecuado.</li>
+                                  <li>Regular los derechos y deberes de los trabajadores y de los empleadores, en relación con la seguridad, salud y ambiente de trabajo.</li>
+                                  <li>Establecer las sanciones por el incumplimiento de la normativa.</li>
+                                  <li>Regular la responsabilidad del empleador y de la empleadora, y sus representantes ante la ocurrencia de un accidente de trabajo o enfermedad ocupacional cuando existiere dolo o negligencia de su parte.</li>
+                              </ul>
+                                <br>
+                              <p id="infoart">Desde HSO INTEGRAL CONSULTING C.A., te ofrecemos herramientas versátiles adaptadas a tus necesidades para cumplir con la Ley Orgánica de Prevención Condiciones y Medio Ambiente de Trabajo, su Reglamento Parcia, el Reglamento de las Condiciones de Higiene y Seguridad en el Trabajo (de 1973) y demás Normas Nacionales e Internacionales.</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    
+                    <li>
+                      <p class="name2">Polémica de las sillas ergonomicas para trabajos sedentarios en Venezuela</p><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">Ver Artículo</button>
+                      <div class="modal fade" id="myModal4" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title">Polémica de las sillas ergonomicas para trabajos sedentarios en Venezuela</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p id="titleart">Polémica de las sillas ergonomicas para trabajos sedentarios en Venezuela</p>
+                              <p id="infoart">Al comprar el mobiliario  para personal administrativo, normalmente el personal de compras y finanzas evalúa los costos en primer lugar, y se olvidan condiciones como: servicio post venta, garantía, materiales de la silla, entre otros. Esto sucede porque se ve a "La Silla" como un mobiliario más y no como el Equipo de Protección para el Personal de Oficina. Con este enfoque, entonces dejaría de verse como un gasto sino como una inversión para el aumento del rendimiento laboral evitando Trastornos Músculo Esqueléticos (TME) del personal.</p>
+                              <p id="infoartnum">1) ¿Por qué debo considerar a la Silla como un Equipo de Protección Personal?</p>
+                              <p id="infoartlist">&#8226; Porque evita la aparición de Enfermedades Ocupacionales con patologías y diagnósticos localizados en la zona de la espalda, cuello y articulaciones principalmente.</p>
+                              <div id="insimg">
+                                  <img src="images/articulos/posturas-ordenador.jpg">
+                                  <p id="infoimg">Imagen N°1: Posturas habituales de los trabajadores con cargos administrativos que derivan en Enfermedades Ocupacionales.</p>
+                              </div>
+                              <p id="infoartlist">&#8226; Algunos diagnósticos más comunes asociados a los pacientes que realizan trabajos en sedentarismo prolongado son: Hernias, fatiga y tensión muscular, cansancio, irritabilidad, discopatía, rectificación de la lordosis cervical y lumbar, cervicalgia y lumbalgia, entre otros. Los costos por rehabilitación, operaciones, ausentismo laboral, reubicación, entre otros superan con crecer los costos sólo de la silla ergonómica.</p>
+                              <div id="insimg">
+                                  <img src="images/articulos/lumbalgia.gif" id="image8">
+                                  <p id="infoimg">Imagen N°2: Lumbalgia: Dolor en la zona lumbar de la espalda, y Cervicargia: Dolor en el cuello.</p>
+                              </div>
+
+                              <p id="infoartnum">2) ¿Qué debo considerar al comprar las Sillas para cargos Administrativos?</p>
+                              <p id="infoart">La Norma Covenin 2742:1998, la cual hace referencia de las condiciones de confort o ergonomía en los puestos de trabajo, establece la consideración de los siguientes aspectos:</p>
+                              <ul id="ulart">
+                                  <li>Base Giratoria  con soporte de 5 ruedas.</li>
+                                  <li>Altura regulable entre 350mm y 520mm.</li>
+                                  <li>La altura de la silla debe permitir la flexión del codo (brazo antebrazo) entre 90° y 100°.</li>
+                                  <li>El respaldo de la silla debe ser rígido y adaptarse a la lordosis lumbar.</li>
+                                  <li>El borde anterior del asiento debe tener una inclinación aproximada de 5°.</li>
+                                  <li>Un soporte no rígido debe unir al asiento con el respaldo.</li>
+                                  <li>Cuando la silla tiene reposa brazos estos deben permitir que el codo forme un ángulo de 90° cómodamente y alcanzar el teclado de forma natural con la mano (AJUSTABLES).</li>
+                                  <li>La longitud del asiento entre el borde anterior y el posterior debe ser de 300mm y 450mm.</li>
+                                  <li>La longitud del asiento entre el borde superior del asiento y el borde superior del respaldo del mismo  debe ser de máximo 500mm.</li>
+                              </ul>
+                              <p id="infoart">También es importante evaluar el material de la silla, la garantía que ofrece el proveedor, servicios de mantenimiento y reparación de sillas, entre otros.</p>
+                              <div id="insimg">
+                                  <div id="insimg2">
+                                      <img src="images/articulos/sillas.jpg">
+                                  </div>
+                                  <p id="infoimg">Imagen N°3. Condiciones Generales de Sillas Ergonómicas para Cargos Administrativos.</p>
+                              </div>
+                              <p id="infoart">En HSO Integral Consulting, C.A. recomendamos que se le de una inducción a las trabajadoras y trabajadores acerca del uso y mantenimiento de la silla, es decir, explicarles el funcionamiento de cada palanca, cada medio de flexión y sobretodo, la importancia de un buen uso del equipo, ya que la silla es un medio de protección pro de imperar la voluntad de la usuaria o usuario en cuidar su salud. En este sentido ofrecemos las siguientes asesorías:</p>
+                              <ul id="ulart">
+                                  <li>Evaluación de Proveedores y procesos de licitación.</li>
+                                  <li>Inspecciones a los puestos de trabajo, evaluando aspectos ergonómicos de organización, medios de trabajo y posturas intrínsecas del trabajador.</li>
+                                  <li>Charlas de Salud y Prevención de Trastornos Musculo Esqueléticos para trabajos Administrativos.</li>
+                                  <li>Programa de Pausas Activas, ejecución y monitoreo de la aplicación de este Programa.</li>
+                              </ul>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    
+                    <li>
+                      <p class="name2">Tendinitis del Supraespinoso</p><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">Ver Artículo</button>
+                      <div class="modal fade" id="myModal5" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title">Tendinitis del Supraespinoso</h4>
+                            </div>
+                            <div class="modal-body">
+                              <p id="titleart">Tendinitis del Supraespinoso</p>
+                              <p id="infoart">La tendinitis del supraespinoso es la inflamación que se ocasiona por la pérdida degenerativa del colágeno ubicado entre  la cabeza del húmero y el arco acromial  por el roce provocado por los movimientos repetidos de elevación del hombro y manipulación de carga. Es importante mencionar que a este tendón le llega poca sangre, por lo que la degeneración del tendón es mayor que su capacidad de regeneración.</p>
+                              <div id="insimg">
+                                  <img src="images/articulos/limitacion-espacio-entre-supraespinoso-acromion.jpg" id="image11">
+                              </div>
+                              <p id="titleart3">Causas de la tendinitis del supraespinoso</p>
+                              <ul id="ulart">
+                                  <li>Reducción significativa del espacio subacromial. Desde el punto de vista ocupacional, los trabajadores y  personas con trabajos que requieren actividad repetitiva por encima de la cabeza o movimientos continuos de hombros (obreros del sector construcción, cajeras y cajeros, almacenistas, pintores, entre otros).</li>
+                                  <li>Los atletas (por ejemplo, los nadadores, los que participan en deportes de lanzamiento, los jugadores de tenis, los jugadores de voleibol). En adultos mayores el envejecimiento, la deshidratación, la perdida de flexibilidad de los tejidos tendinosos y articulares, así como los micro-traumatismos acumulados en el  tiempo, hacen que aumente la predisposición a padecer problemas tendinosos.</li>
+                                  <li>Un mal riego sanguíneo de la zona favorece la inflamación de los tejidos de esta articulación, posiblemente provocado por estrés y una incorrecta alimentación y consumo frecuente de bebidas alcohólicas y consumo de cigarros.</li>
+                              </ul>
+                              <div id="insimg">
+                                  <div id="insimg3">
+                                      <!--<img src="images/articulos/fig6-2-3a.jpg" id="image12">
+                                      <img src="images/articulos/IMG4e83274960214.jpg" id="image13">
+                                      <img src="images/articulos/postura1ge2.png" id="image14">-->
+                                      <img src="images/articulos/img.jpg">
+                                  </div>
+                              </div>
+                              <p id="titleart2">Síntomas</p>
+                              <ul id="ulart">
+                                  <li>El dolor se concentra en la parte lateral del hombro.</li>
+                                  <li>Aparece dolor al movimiento de separación del brazo y existe un arco doloroso entre los 60 y 120 grados de separación.</li>
+                                  <li>A veces el dolor se irradia a la cara lateral del brazo hasta el codo. </li>
+                                  <li>Es frecuente que haya dolor y molestias en la musculatura del cuello y la columna cervical del lado del hombro afectado.</li>
+                              </ul>
+                              <div id="insimg">
+                                  <img src="images/articulos/iStock_000013304765XSmall_David-Marchal.jpg" id="image15">
+                              </div>
+                              <p id="titleart4">Medidas preventivas para la tendinitis del supraespinos</p>
+                              <ul id="ulart">
+                                  <li>Evite actividades repetidas por encima del hombro.</li>
+                                  <li>Si practica algún deporte de lanzamiento, caliente antes de realizarlo.</li>
+                                  <li>Adopte posturas ergonómicas y adecuadas al emplear el mouse de la computadora y al usar la laptop.</li>
+                                  <li>Evite el sobrepeso, manteniendo una dieta sana y practicando ejercicio. </li>
+                                  <li>Evite apoyar el peso de su cuerpo sobre el hombro ya que los músculos no están diseñados para manipular carga.</li>
+                                  <li>Si debe manipular objetos por encima del hombro, emplee ayuda mecánica o use escaleras, atril o andamios.</li>
+                              </ul>
+                              <br>
+                              <div id="madeby">
+                                  <p>Realizado por:<br>Ing. Briceño Ródiz Ysvanessa.<br>Con: Ninoska Chalén Porras.</p>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <script>
+                      var options = {
+                          valueNames: ['name2']
+                      };
+                      var userList = new List ('art-list', options);
+                  </script>
+                </div>    
+                            
+            </div>
+
+
+
+
+
+
+
+
+            <footer>
+                <div id="inside">
+
+                    <div id="icons2">
+                        <a href="https://www.facebook.com/hsoconsultingca/?ref=ts&fref=ts" target="_blank"><span class="icon-facebook"></span></a>
+                        <a href="https://twitter.com/HSOConsulting" target="_blank"><span class="icon-twitter"></span></a>
+                        <a href="https://www.linkedin.com/groups/8349383/profile" target="_blank"><span class="icon-linkedin"></span></a>
+                        <a href="https://www.youtube.com/channel/UCGq5k1Q_t1UAGigPLeuoGJw" target="_blank"><span class="icon-youtube"></span></a>
+                    </div>
+
+                    <div id="infofoot">
+                        <p id="end">Todos los derechos reservados - © 2013 HSO Integral Consulting C.A. - Rif: J-40308913-2. <img src="images/favicon1.png" style="position:relative; width:20px; heigth:20px; opacity:0;"></p>
+                    </div>
+
+                </div>
+            </footer>
+        </div>
+
+
+
+
+
+
+
+    </body>
+</html>

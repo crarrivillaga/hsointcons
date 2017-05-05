@@ -1,0 +1,349 @@
+<!DOCTYPE>
+<html>
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"><!--- RESPONSIVE (Viewport para dispositivos moviles) -->
+        <meta name="description" content="Acerca de la empresa/pagina"> <!--Lo que aparece al buscar en google-->
+        <meta name="keywords" contect="palabras clave">
+        
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/clientes.css"> <!--external css-->
+        <link rel="stylesheet" href="css/normalize.css"> 
+        <link rel="stylesheet" href="icons/fonts.css"> <!--iconos-->
+        <link rel="icon" href="images/HSO-triangulo.ico"> <!--favicon-->
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <!-- JQUERY -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="http://code.jquery.com/jquery-latest.js"></script> <!--- jquery -->
+        
+        <script>
+            $(document).ready(function(){
+                $('#sky').click(function(){
+                    $('body, html').animate({
+                        scrollTop: '0px'
+                    }, 300); //300, velocidad en la que sube                    
+                }); 
+                
+                $(window).scroll(function(){
+                    if($(this).scrollTop() > 0){
+                        $('#sky').slideDown(300);
+                    }else{
+                        $('#sky').slideUp(300);
+                    } 
+                });
+            });
+        </script>
+       
+        
+        <title>HSO Integral Consulting C.A.</title>
+	</head>
+	
+	<body>
+        <!--
+        <header id="header2">
+            
+            <div id="logo-name">
+                <img src="images/HSO-nombre1.png">                
+            </div>
+            <nav id="menu2">
+                <ul id="ul2">
+                    <li id="li2"><a href="index.html" style="text-decoration:none;">Inicio</a></li>
+                    <li id="li2"><a href="servicios.html" style="text-decoration:none;" id="imp2">Productos y Servicios</a></li>
+                    <li id="li2a"><a href="clientes.html" style="text-decoration:none;" id="imp1">Clientes y Alianzas</a></li>
+                    <li id="li2"><a href="contacto.html" style="text-decoration:none;">Contacto</a></li>
+                </ul>
+            </nav>
+            <div id="icons">
+                <a href="https://www.facebook.com/hsoconsultingca/?ref=ts&fref=ts"><span class="icon-facebook"></span></a>
+                <a href="https://twitter.com/HSOConsulting"><span class="icon-twitter"></span></a>
+                <a href="https://www.linkedin.com/groups/8349383/profile"><span class="icon-linkedin"></span></a>
+            </div>          
+            
+            
+        </header>
+        -->
+        
+        
+        <header id="header1">
+            <div id="inside1">
+                <div id="logo-name">
+                    <img src="images/HSO-logonuevo.png">
+                </div>
+                <!--
+                <div id="icons">
+                    <a href="https://www.facebook.com/hsoconsultingca/?ref=ts&fref=ts"><span class="icon-facebook"></span></a>
+                    <a href="https://twitter.com/HSOConsulting"><span class="icon-twitter"></span></a>
+                    <a href="https://www.linkedin.com/groups/8349383/profile"><span class="icon-linkedin"></span></a>
+                </div>
+                -->
+                <header id="header2">
+                    <nav>
+                        <ul>
+                            <li id="li2"><a href="index.html" style="text-decoration:none;"><span class="icon-home"></span>Inicio</a></li>
+                            <li id="li2imp"><a href="servicios.html" style="text-decoration:none;" id="imp2"><span class="icon-briefcase"></span>Productos y Servicios
+                                <!--
+                                <ul id="ulsub">
+                                    <a href="articulos.html"><li id="li2sub">Artículos</li></a>
+                                    <a href="leyes.html"><li id="li2sub">Leyes</li></a>
+                                </ul>
+                                -->
+                            </a></li>
+                            <li id="li2a"><a href="articulos.html" style="text-decoration:none;" id="imp1"><span class="icon-books"></span>Información</a></li>
+                            <li id="li2a"><a href="clientes.html" style="text-decoration:none;" id="imp1"><span class="icon-star-full"></span>Clientes y Alianzas</a></li>
+                            <!--<li id="li2"><a href="Tutoriales/tutoriales.html" style="text-decoration:none;"><span class="icon-display"></span>Tutoriales</a></li>--->
+                            <li id="li2"><a href="contacto.html" style="text-decoration:none;"><span class="icon-envelop"></span>Contacto</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+        </header>
+        
+        <div id="movilmenu">
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu">Menú<span class="icon-circle-down"></span></label>
+
+            <nav class="menu">
+                <ul id="ul2">
+                    <li id="li2"><a href="index.html" style="text-decoration:none;"><span class="icon-home"></span>Inicio</a></li>
+                    <li id="li2"><a href="servicios.html" style="text-decoration:none;" id="imp2"><span class="icon-briefcase"></span>Productos y Servicios</a></li>
+                    <li id="li2a"><a href="articulos.html" style="text-decoration:none;" id="imp1"><span class="icon-books"></span>Información</a></li>
+                    <li id="li2a"><a href="clientes.html" style="text-decoration:none;" id="imp1"><span class="icon-star-full"></span>Clientes y Alianzas</a></li>
+                    <!--<li><a href="Tutoriales/tutoriales.html" style="text-decoration:none;"><span class="icon-display"></span>Tutoriales</a></li>-->
+                    <li id="li2"><a href="contacto.html" style="text-decoration:none;"><span class="icon-envelop"></span>Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        
+        <!--
+        <div id="socialbx">
+            <div id="iconsbx">
+                <a href="https://www.facebook.com/hsoconsultingca/?ref=ts&fref=ts" target="_blank"><span class="icon-facebook"></span></a>
+                <a href="https://twitter.com/HSOConsulting" target="_blank"><span class="icon-twitter"></span></a>
+                <a href="https://www.linkedin.com/groups/8349383/profile" target="_blank"><span class="icon-linkedin"></span></a>
+            </div>
+        </div>
+        -->
+        
+        <span class="icon-circle-up" id="sky"></span>
+        <div id="contenido">
+            
+            
+            <div class="contain">
+                <!-------------- clientes ------------------>
+                <div id="clients">
+                    <p id="title">Clientes</p>
+                    
+                    <!-- grupo1 -->
+                    <div class="group">
+                        <div class="ins">
+                            <div class="logo">
+                                <div id="d1">
+                                    <img src="images/logoucab.png" alt="ucab" id="1">
+                                </div>                            
+                            </div>
+
+                            <!--<div id="info">
+                                <p>Nombre:</p>
+                            </div>-->
+                        </div>
+
+                        <div class="ins">
+                            <div class="logo">
+                                <div id="d2">
+                                    <img src="images/autoblindajes.png" alt="autoblindaje" id="2">
+                                </div>                            
+                            </div>
+
+                            <!--<div id="info">
+                                <p>Nombre:</p>
+                            </div>-->
+                        </div>
+
+
+                        <div class="ins">
+                            <div class="logo">
+                                <div id="d3">
+                                    <img src="images/editmedipan.png" alt="editorial_panamericana" id="3">
+                                </div>
+                            </div>
+
+                            <!--<div id="info">
+                                <p>Nombre:</p>
+                            </div>-->
+                        </div>
+                    </div>
+                    <!-- grupo1 -->
+                    
+                    <!-- grupo2 -->
+                    <div class="group">
+                        <div class="ins">
+                            <div class="logo">
+                                <div id="d4">
+                                    <img src="images/gold-data1.png" alt="gold_data">
+                                </div>
+                            </div>
+
+                            <!--<div id="info">
+                                <p>Nombre:</p>
+                            </div>-->
+                        </div>
+
+                        <div class="ins">
+                            <div class="logo">
+                                <div id="d5">
+                                    <img src="images/grupoidea.png" alt="grupo_idea">
+                                </div>
+                            </div>
+
+                            <!--<div id="info">
+                                <p>Nombre:</p>
+                            </div>-->
+                        </div>
+
+                        <div class="ins">
+                            <div class="logo">
+                                <div id="d6">
+                                    <img src="images/locatel1.png" alt="locatel">
+                                </div>
+                            </div>
+
+                            <!--<div id="info">
+                                <p>Nombre:</p>
+                            </div>-->
+                        </div>
+                    </div>
+                    <!-- grupo2 -->
+                    
+                    <!-- grupo3 -->
+                    <div class="group">
+                        <div class="ins">
+                            <div class="logo">
+                                <div id="d7">
+                                    <img src="images/barrachacao.jpg" alt="barra_chacao">
+                                </div>
+                            </div>
+
+                            <!--<div id="info">
+                                <p>Nombre:</p>
+                            </div>-->
+                        </div>
+
+                        <div class="ins">
+                            <div class="logo">
+                                <div id="d8">
+                                    <img src="images/medkar1.png" alt="medkar">
+                                </div>
+                            </div>
+
+                            <!--<div id="info">
+                                <p>Nombre:</p>
+                            </div>-->
+                        </div>
+
+                        <div class="ins">
+                            <div class="logo">
+                                <div id="d9">
+                                    <img src="images/milyunpan.png" alt="mil_y_un_pan">
+                                </div>
+                            </div>
+
+                            <!--<div id="info">
+                                <p>Nombre:</p>
+                            </div>-->
+                        </div>
+                    </div>
+                    <!-- grupo3 -->
+                       
+                    <!-- grupo4 --> 
+                    <div class="group">
+                        <div class="ins">
+                            <div class="logo">
+                                <div id="d10">
+                                    <img src="images/mundopc.png" alt="mundopc">
+                                </div>
+                            </div>
+
+                            <!--<div id="info">
+                                <p>Nombre:</p>
+                            </div>-->
+                        </div>
+                    </div>
+                    <!-- grupo4 -->                 
+                </div>
+                <!-------------- clientes ------------------>
+
+
+                <!-------------- alianzas ------------------>
+                <div id="alianzas">
+                    <p id="title">Alianzas</p>
+                    
+                    <!-- grupo5 --> 
+                    <div class="group">
+                        <div class="ins">
+                            <div class="logo">
+                                <div id="d11">
+                                    <img src="images/labgeminis.png" alt="lab_geminis">
+                                </div>
+                            </div>
+
+                            <!--<div id="info">
+                                <p>Nombre:</p>
+                            </div>-->
+                        </div>
+
+                        <div class="ins">
+                            <div class="logo">
+                                <div id="d12">
+                                    <img src="images/sirh.png" alt="sirh_vzla">
+                                </div>
+                            </div>
+
+                            <!--<div id="info">
+                                <p>Nombre:</p>
+                            </div>-->
+                        </div>
+
+                        <div class="ins">
+                            <div class="logo">
+                                <div id="d13">
+                                    <img src="images/ucabconsulting.JPG" alt="ucab_consulting">
+                                </div>
+                            </div>
+
+                            <!--<div id="info">
+                                <p>Nombre:</p>
+                            </div>-->
+                        </div>
+                    </div>
+                    <!-- grupo5 --> 
+                    
+                        
+
+                </div>
+            </div>
+            
+            
+            <footer>
+                <div id="inside">
+                    
+                    <div id="icons2">                       
+                        <a href="https://www.facebook.com/hsoconsultingca/?ref=ts&fref=ts" target="_blank"><span class="icon-facebook"></span></a>
+                        <a href="https://twitter.com/HSOConsulting" target="_blank"><span class="icon-twitter"></span></a>
+                        <a href="https://www.linkedin.com/groups/8349383/profile" target="_blank"><span class="icon-linkedin"></span></a>
+                        <a href="https://www.youtube.com/channel/UCGq5k1Q_t1UAGigPLeuoGJw" target="_blank"><span class="icon-youtube"></span></a>
+                    </div>
+                    
+                    <div id="infofoot">
+                        <p id="end">Todos los derechos reservados - © 2013 HSO Integral Consulting C.A. - Rif: J-40308913-2. <img src="images/favicon1.png" style="position:relative; width:20px; heigth:20px; opacity:0;"></p>
+                    </div>
+                    
+                </div>
+            </footer>
+            
+            
+            
+        </div>  <!-- contenido -->
+	</body>
+
+</html>
