@@ -397,18 +397,18 @@ footer #end {
     }
     #header1 #inside1 #logo-name {
         position: relative;
-        width: 1000px;
-        align-content: center;
-        margin-right: auto;
-        margin-left: auto;
+        /*width: 1000px;*/
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        
     }
     #header1 #inside1 #logo-name img {
         position: relative;
         padding: 10px;
-        width:30%;
+        width:100%;
         align-content: center;
-        margin-right: auto;
-        margin-left: auto;
+        margin: 0 auto;
     }
     #header2 {
         display: none;

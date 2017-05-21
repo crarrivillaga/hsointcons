@@ -312,20 +312,20 @@ footer #inside #icons2 a span:hover {
         border-bottom: 2px solid #FF3300;
         height: 70px    
     }
-    #header1 #inside1 #logo-name {
+   #header1 #inside1 #logo-name {
         position: relative;
-        width: 1000px;
-        align-content: center;
-        margin-right: auto;
-        margin-left: auto;
+        /*width: 1000px;*/
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        
     }
     #header1 #inside1 #logo-name img {
         position: relative;
         padding: 10px;
-        width:30%;
+        width:100%;
         align-content: center;
-        margin-right: auto;
-        margin-left: auto;
+        margin: 0 auto;
     }
     #header1 #inside1 #header2 {
         display: none;
