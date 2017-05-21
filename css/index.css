@@ -397,16 +397,15 @@ footer #end {
     }
     #header1 #inside1 #logo-name {
         position: relative;
-        /*width: 1000px;*/
-        width: 100%;
-        text-align: center;
+        width: 1000px;
+        align-content: center;
         margin: 0 auto;
         
     }
     #header1 #inside1 #logo-name img {
         position: relative;
         padding: 10px;
-        width:100%;
+        width:30%;
         align-content: center;
         margin: 0 auto;
     }
