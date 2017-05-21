@@ -176,8 +176,9 @@
     text-align: center;
 }
 #descripcion p {
-    text-align: center;
+    text-align: justify;
     font-size: 16px;
+    padding: 0px 180px;
 }
 #descripcion span {
     font-size: 180px;
@@ -206,8 +207,9 @@
     text-align: center;
 }
 #contentmision p {
-    text-align: center;
+    text-align: justify;
     font-size: 16px;
+    padding: 0px 180px;
 }
 #contentmision span {
     font-size: 180px;
@@ -234,8 +236,9 @@
     text-align: center;
 }
 #contentvision p {
-    text-align: center;
+    text-align: justify;
     font-size: 16px;
+    padding: 0px 180px;
 }
 #contentvision span {
     font-size: 180px;
@@ -508,79 +511,8 @@ footer #end {
     }
     
     
-    /*
-    #socialbx {
-        display:block;
-        position: fixed;
-        padding: 10px;
-        background: #25103d;
-        border-top:2px solid #e63d23;
-        border-bottom:2px solid #e63d23;
-        border-right:2px solid #e63d23;
-        width: auto;
-        height: auto;
-        top: 540px;
-        z-index: 60000000000000;
-    }
-    #socialbx #iconsbx {
-        display: inline;
-        position: relative;
-        width: 0px;
-        height: 400px;
-        top: 0px;
-        left: 0px;
-    }
-    #socialbx #iconsbx a {
-        display: block;
-        font-size: 20px;
-        padding: 10px 0;
-        text-decoration: none;
-        left: 0;
-    }
-    #socialbx #iconsbx .icon-facebook {
-        color: #25103d; 
-        <!--border: 2px solid #25103d;-->
-        background: white;
-        padding: 4px;
-        border-radius: 10px;    
-        transition-duration: 0.4s;
-    }
-    #socialbx #iconsbx .icon-facebook:hover {
-        background: #e63d23;
-    }
-    #socialbx #iconsbx .icon-twitter {
-        color: #25103d; 
-        <!--border: 2px solid #25103d;-->
-        background: white;
-        padding: 4px;
-        border-radius: 10px;    
-        transition-duration: 0.4s;
-    }
-    #socialbx #iconsbx .icon-twitter:hover {
-        background: #e63d23;
-    }
-    #socialbx #iconsbx .icon-linkedin {
-        color: #25103d; 
-        <!--border: 2px solid #25103d;-->
-        background: white;
-        padding: 4px;
-        border-radius: 10px;    
-        transition-duration: 0.4s;
-    }
-    #socialbx #iconsbx .icon-linkedin:hover {
-        background: #e63d23;
-    }
-    */
-    
-    
-    
-    
     #contenido #info {
         position: relative;
-        /*top: -400px;*/
-        /*overflow: hidden;*/
-        /*margin-bottom: 0;*/
-        /*height: 360%;*/
         height: auto;
         top: -1px;
         align-content: center;
@@ -614,7 +546,7 @@ footer #end {
         font-weight: bold;
     }
     #contenido #info #descripcion p {
-        text-align: center;
+        text-align: left;
         margin-right: auto;
         margin-left: auto;
         font-size: 16px;
@@ -658,7 +590,7 @@ footer #end {
     #contenido #info #contentmision p {
         width: 100%;
         font-size: 16px;    
-        text-align: center;
+        text-align: left;
         margin-right: auto;
         margin-left: auto;
     }
@@ -693,7 +625,7 @@ footer #end {
     }
     #contenido #info #contentvision p {
         position: relative;
-        text-align: center;
+        text-align: left;
         margin-right: auto;
         margin-left: auto;
         width: 100%;
@@ -873,4 +805,357 @@ footer #end {
     
                                                     
     
+}
+
+@media only screen and (min-width:1500px) {
+    #header1 {
+        position: relative;
+        width: 100%;
+    }
+    #header1 #inside1 {
+        position: relative;
+        width: 100%;
+        background: #c7c7c7;
+        border-bottom: 2px solid #FF3300;
+        height: 70px;    
+    }
+    #header1 #inside1 #logo-name {
+        position: relative;
+        width: 1000px;
+    }
+    #header1 #inside1 #logo-name img {
+        position: relative;
+        width: 33%;
+        padding: 10px;
+    }
+    #header1 #inside1 #header2 {
+        background: #25103d;
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        align-content: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #header1 #inside1 #header2 nav {
+        position: relative;
+        width: 100%;
+        align-content: center;
+        margin-right: auto;
+        margin-left: auto;
+        font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    }
+    #header1 #inside1 #header2 nav ul {
+        position: relative;
+        width: 100%;
+        margin-bottom: 0;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 10px 20px;
+    }
+    #header1 #inside1 #header2 nav ul li {
+        list-style: none;
+        display: inline;
+        position: relative;
+        transition-duration: 0.4s;
+        width: 100%;
+        padding: 12px 6px;
+    }
+    #header1 #inside1 #header2 nav ul li a span {
+        padding-right: 10px
+    }
+    #header1 #inside1 #header2 nav ul a {
+        color: white;
+        font-size: 16px;    
+        width: 100%;
+        align-content: center;
+        margin-right: auto;
+        margin-left: auto;  
+        padding: 12px 20px;
+        transition-duration: 0.4s;
+    }
+    #header1 #inside1 #header2 nav ul a:hover {
+        background: #FF3300;
+    }
+
+
+
+
+    #movilmenu {
+        display: none;
+    }
+    #movilmenu #btn-menu {
+        display: none;
+    }
+
+
+                                                              /*CONTENIDO FULL*/      
+    #contenido {
+        /*background: red;*/
+        position: relative;
+        top: 40px;
+        overflow: none;
+        font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    }
+                                                              /*CONTENIDO FULL*/
+
+    #sky {
+        display:none;
+        font-size: 20px;
+        padding: 15px;
+        color: white;
+        background: rgba(36, 36, 36, 0.5);
+        position: fixed;
+        cursor: pointer;
+        z-index: 999;
+        border-radius: 255px;
+        bottom: 20px;
+        right: 20px;
+    }
+    #sky:hover {
+        background: rgb(36, 36, 36);
+        transition: 0.4s;
+    }
+
+                                                            /*SLIDER PRINCIPAL*/
+    #contenido .carousel-indicators {
+        display: none;
+    }
+    #contenido .carousel-inner {
+        width: 100%;
+    }
+    #contenido .carousel-inner img{
+        width: 100%;
+    }
+
+                                                            /*SLIDER PRINCIPAL*/
+
+
+
+
+
+    #contenido #info {
+        position: relative;
+        overflow: none;
+        height: auto;
+        width: 100%;
+        color: black;
+    }
+    #contenido #info #x {
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+        /*width: 90%;*/
+    }
+
+
+
+                                                            /*DESCRIPCION*/
+
+    #contenido #info #descripcion {
+        position: relative;
+        /*width: 80%;*/
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 20px;
+        text-align: center;
+        background: #f0f0f0;
+        padding: 20px;
+    }
+    #descripcion h2 {
+        width: 20%;
+        border-bottom: 3px solid #FF3300;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 40px;
+    }
+    #descripcion p {
+        text-align: justify;
+        font-size: 20px;
+        padding: 0 180px;
+    }
+                                                            /*DESCRIPCION*/
+
+
+
+                                                            /*MISION*/ 
+
+    #contenido #info #contentmision {
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 20px;
+        text-align: center;
+        padding: 20px;
+    }
+    #contentmision h2 {
+        width: 20%;
+        border-bottom: 3px solid #25103d;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 40px;
+    }
+    #contentmision p {
+        text-align: justify;
+        font-size: 20px;
+        padding: 0 180px;
+    }
+                                                            /*MISION*/
+
+
+                                                            /*VISION*/
+    #contenido #info #contentvision {
+        position: relative;
+        margin-right: auto;
+        text-align: center;
+        padding: 20px;
+        background: #f0f0f0;
+    }
+    #contentvision h2 {
+        width: 20%;
+        border-bottom: 3px solid #FF3300;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 40px;
+    }
+    #contentvision p {
+        text-align: justify;
+        font-size: 20px;
+        padding: 0 180px;
+    }
+                                                            /*VISION*/
+
+
+                                                            /*TWITTER*/
+    #newsec {
+        position: relative;
+        padding: 20px;
+        display: flex;
+        background: -webkit-linear-gradient(-45deg,#25103d,#00ccff);
+        background: -moz-linear-gradient(-45deg,#25103d,#00ccff);
+        background: -o-linear-gradient(-45deg,#25103d,#00ccff);
+        background: linear-gradient(-45deg,#00ccff,#25103d);
+    }
+    #contenido #twitter {
+        position: relative;
+        width: 50%;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 20px;
+    }
+    #socialnet {
+        position: relative;
+        width: 50%;
+        /*border-left: 2px solid rgba(72, 90, 165, 3.5);*/
+    }
+    #socialnet #twttitle {
+        color: white;
+        border-bottom: 3px solid #e63d23;
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 40px;
+    }
+    #socialnet #twtinfo {
+        color: white;
+        font-size: 28px;
+        padding-left: 60px;
+    }
+    #socialnet ul {
+        position: relative;
+        padding-left: 60px;
+    }
+    #socialnet ul li {
+        list-style: none;
+        padding: 10px 0;
+    }
+    #socialnet ul li a {
+        color: white;
+        font-size: 28px;
+        text-decoration: none;
+        transition-duration: 0.4s;
+    }
+    #socialnet ul li a span {
+        color: #25103d;
+        background: white;
+        padding: 5px;
+        border-radius: 255px;
+        margin-right: 20px;
+        transition-duration: 0.4s;
+    }
+    #socialnet ul li a:hover > span {
+        background: #FF3300;
+        transition-duration: 0.4s;
+    }
+                                                            /*TWITTER*/
+
+
+
+                                                            /*CLIENTES - ALIANZAS*/
+    #cya #carousel-example-generic {
+        background: white;
+        position: relative;
+        overflow: hidden;
+        padding: 20px;
+    }
+    #cya #bepart1 {
+        position: relative;
+        width: 100%;
+    }
+    #cya #cliente1 {
+        position: relative;
+        width: 100%;
+    }
+    #cya #cliente2 {
+        position: relative;
+        width: 100%;
+    }
+    #cya #cliente3 {
+        position: relative;
+        width: 100%;
+    }
+    #cya #bepart2 {
+        position: relative;
+        width: 100%;
+    }
+    #cya #alianza {
+        position: relative;
+        width: 100%;
+    }
+    #cya .carousel-indicators {
+        display: none;
+        position: absolute;
+        top: 160px;
+    }
+    #cya .carousel-indicators li {
+        border-color:#25103d;
+    }
+    #cya .carousel-indicators .active {
+        background: #25103d;
+    }
+                                                            /*CLIENTES - ALIANZAS*/
+
+
+                                                            /*FOOTER*/
+    footer {
+        background: #25103d;
+        border-top: 3px solid #FF3300;
+        position: relative;
+        overflow: hidden;    
+    }
+    footer #inside {
+        padding: 10px;
+        position: relative;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    footer #end {
+        position: relative;
+        top: 5px;
+        font-size: 20px;
+        color: white;
+    }
 }

@@ -162,6 +162,7 @@
     font-size: 17px;
     color: black;
     text-align: justify;
+    padding: 0px 140px;
 }
 #laws #law-list #bus {
     padding: 15px;
@@ -230,7 +231,8 @@
 #art #infa {
     font-size: 17px;
     color: black;
-    text-align: justify;
+    text-align: center;
+    padding: 0px 140px;
 }
 #art #art-list #bus2 {
     padding: 15px;
@@ -645,6 +647,12 @@ footer #inside #icons2 a span:hover {
         width: 70%;
         margin: 0 auto;
     }
+    #laws #infl {
+        font-size: 17px;
+        color: black;
+        text-align: justify;
+        padding: 0px;
+    }
     #laws #law-list #bus input {
         width: 80%;
     }
@@ -658,6 +666,10 @@ footer #inside #icons2 a span:hover {
         font-size: 20px;
         color: black;
         border-bottom: 2px solid #FF3300;
+    }
+    #art #infa {
+        text-align: justify;
+        padding: 0px;
     }
     #art #titleart {
         position: relative;
@@ -851,4 +863,10 @@ footer #inside #icons2 a span:hover {
         margin-right: auto;
     }
                                                             /*FOOTER*/
+}
+
+@media only screen and (min-width:1500px) {
+    #art #infa {
+        text-align: justify;
+    }
 }

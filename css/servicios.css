@@ -27,7 +27,7 @@
     background: #c7c7c7;
     /*background: -webkit-linear-gradient(top,#969696,#c1c1c1);*/
     border-bottom: 2px solid #FF3300;
-    height: 70px    
+    height: 70px;    
 }
 #header1 #inside1 #logo-name {
     position: relative;
@@ -141,25 +141,13 @@
 
 
 
-#socialbx {
-    display: none;
-}
-#socialbx #iconsbx {
-    display: none;
-}
-
-
-
-
-
-
 
 #servs {
     position: relative;
     width: 100%;
 }
 #servs ul {
-    padding-left: 20px;
+    padding-left: 60px;
 }
 #servs h2 {
     padding: 10px;

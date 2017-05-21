@@ -590,8 +590,10 @@ footer #inside #icons2 a span:hover {
         position: relative;
         font-size: 13px;
         color: white;
-        text-align: center;
+        text-align: justify;
         padding: 0;
+        width: 90%;
+        margin: 0 auto;
     }
     #contenido form #btn {
         position: relative;
@@ -681,10 +683,5 @@ footer #inside #icons2 a span:hover {
                                                           /*FOOTER*/
     
                                                     
-    
-}
-
-
-@media only screen and (min-width:901px) and (max-width:1400px) {
     
 }
